@@ -198,6 +198,40 @@ ul {
 }
 /* Hero Section End */
 
+/* Client Logo Section Start */
+.clients {
+    padding: 50px 0;
+}
+
+.client-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.client-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    justify-items: center;
+}
+
+.client-logos img {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.client-logos img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+/* Client Logo Section End */
+
 /* Responsive Layout For Samll Device */
 /* Extra small devices (phones, less than 576px) */
     @media (max-width: 575.98px) {
@@ -247,6 +281,13 @@ ul {
         margin: 40px 0;
     }
     /* Hero Section End*/
+
+    /* Client Section Start */
+    .client-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    /* Client Section End */
   
   /* Small devices (phones, 576px and up) */
   @media (min-width: 576px) and (max-width: 767.98px) {
@@ -295,6 +336,13 @@ ul {
         margin: 50px 0;
     }
     /* Hero Section End*/
+
+    /* Client Section Start */
+    .client-logos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+    /* Client Section End */
   }
   
   /* Medium devices (tablets, 768px and up) */
@@ -310,6 +358,14 @@ ul {
         font-size: 50px;
     }
     /* Hero Section End*/
+
+    /* Client Section Start */
+    
+    .client-logos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+    /* Client Section End */
   }
   
   /* Large devices (desktops, 992px and up) */
@@ -322,6 +378,13 @@ ul {
         font-size: 55px;
     }
     /* Hero Section End*/
+
+    /* Client Section Start */
+    .client-logos {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 35px;
+      }
+    /* Client Section End */
   }
 
   /* Extra large (1200px and above) */
