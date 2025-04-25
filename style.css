@@ -501,6 +501,139 @@ h5 {
     text-align: left;
 }
 
+/* Office Locations Section */
+.offices {
+    padding: 75px 0;
+}
+
+.offices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.office-card {
+    background-color: #ffffff;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.office-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.office-image {
+    width: 100%;
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+}
+
+.office-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1E293B;
+    margin: 20px 20px 10px 20px;
+    text-align: left;
+}
+
+.office-text {
+    font-size: 16px;
+    color: #475569;
+    margin: 0 20px 20px 20px;
+    text-align: left;
+}
+
+/* Responsive styles for offices */
+/* Extra large devices (1200px and above) */
+@media (min-width: 1200px) {
+    .offices-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .offices-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .office-image {
+        height: 180px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .offices {
+        padding: 60px 0;
+    }
+    
+    .offices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .office-image {
+        height: 160px;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .offices {
+        padding: 50px 0;
+    }
+    
+    .offices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .office-image {
+        height: 140px;
+    }
+    
+    .office-title {
+        font-size: 18px;
+        margin: 16px 16px 8px 16px;
+    }
+    
+    .office-text {
+        font-size: 14px;
+        margin: 0 16px 16px 16px;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    .offices {
+        padding: 40px 0;
+    }
+    
+    .offices-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .office-image {
+        height: 180px;
+    }
+    
+    .office-title {
+        font-size: 18px;
+        margin: 16px 16px 8px 16px;
+    }
+    
+    .office-text {
+        font-size: 14px;
+        margin: 0 16px 16px 16px;
+    }
+}
+
 
 /* Responsive Styles */
 /* Extra large devices (1200px and above) */
@@ -534,6 +667,13 @@ h5 {
     
     .stat-item h3 {
         font-size: 60px;
+    }
+    .offices-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .office-image {
+        height: 25px;
     }
 }
 
@@ -591,6 +731,18 @@ h5 {
     
     .procrastinator-traits {
         margin-right: 0;
+    }
+    .offices {
+        padding: 60px 0;
+    }
+
+    .offices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .office-image {
+        height: 25px;
     }
 }
 
@@ -668,6 +820,28 @@ h5 {
     
     .procrastinator-traits {
         margin-right: 0;
+    }
+    .offices {
+        padding: 50px 0;
+    }
+
+    .offices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .office-image {
+        height: 30px;
+    }
+
+    .office-title {
+        font-size: 18px;
+        margin: 16px 16px 8px 16px;
+    }
+
+    .office-text {
+        font-size: 14px;
+        margin: 0 16px 16px 16px;
     }
 }
 
@@ -780,5 +954,27 @@ h5 {
     }
     .testimonial-author p {
         font-size: 14px;
+    }
+    .offices {
+        padding: 40px 0;
+    }
+
+    .offices-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .office-image {
+        height: 25px;
+    }
+
+    .office-title {
+        font-size: 18px;
+        margin: 16px 16px 8px 16px;
+    }
+
+    .office-text {
+        font-size: 14px;
+        margin: 0 16px 16px 16px;
     }
 }
