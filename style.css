@@ -636,7 +636,7 @@ h5 {
 
 .app-download-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 60px;
     align-items: center;
 }
@@ -673,7 +673,7 @@ h5 {
 .app-dashboard-preview {
     max-width: 100%;
     border-radius: 16px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -698,11 +698,13 @@ h5 {
 
 .dashboard-container img:first-child {
     z-index: 2;
+    margin-bottom: -90px;
+    margin-left: 100px;
 }
 
 .dashboard-container img:last-child {
-    margin-top: -60px;
-    margin-left: 40px;
+    margin-top: -75px;
+    margin-left: 90px;
     width: 90%;
     z-index: 1;
 }
@@ -1005,6 +1007,17 @@ h5 {
     .text {
         padding: 0 100px;
     }
+    .app-download .container {
+        padding: 0 80px;
+    }
+    
+    .app-download-content {
+        max-width: 700px;
+    }
+    
+    .app-dashboard-preview {
+        max-width: 900px;
+    }
 }
 
 /* Large devices (desktops, 992px to 1199px) */
@@ -1034,6 +1047,24 @@ h5 {
 
     .office-image {
         height: 25px;
+    }
+    .app-download-content h2 {
+        font-size: 40px;
+    }
+    
+    .app-text {
+        font-size: 16px;
+    }
+
+    .dashboard-container img:first-child {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .dashboard-container img:last-child {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
     }
 }
 
@@ -1103,6 +1134,53 @@ h5 {
 
     .office-image {
         height: 25px;
+    }
+    .app-download {
+        padding: 60px 0;
+    }
+    
+    .app-download .container {
+        padding: 0 30px;
+    }
+    
+    .app-download-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .app-download-content {
+        text-align: center;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    
+    .app-download-content h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .app-text {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .app-dashboard-preview {
+        max-width: 700px;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .dashboard-container img:first-child {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .dashboard-container img:last-child {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
     }
 }
 
@@ -1235,6 +1313,54 @@ h5 {
 
     .faq-answer p {
         font-size: 15px;
+    }
+
+    .app-download {
+        padding: 50px 0;
+    }
+    
+    .app-download .container {
+        padding: 0 20px;
+    }
+    
+    .app-download-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .app-download-content {
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    
+    .app-download-content h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .app-text {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .app-dashboard-preview {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .dashboard-container img:first-child {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .dashboard-container img:last-child {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
     }
 }
 
@@ -1402,5 +1528,70 @@ h5 {
 
     .faq-answer p {
         font-size: 14px;
+    }
+    .app-download {
+        padding: 40px 0;
+    }
+    
+    .app-download .container {
+        padding: 0 15px;
+    }
+    
+    .app-download-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .app-download-content {
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    
+    .app-download-content h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .app-text {
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .app-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .app-dashboard-preview {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    
+    .dashboard-container {
+        flex-direction: column;
+    }
+    
+    .dashboard-container img {
+        width: 100%;
+    }
+
+    .dashboard-container img:first-child {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .dashboard-container img:last-child {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
     }
 }
