@@ -1,3 +1,4 @@
+// Faq toggle
 document.addEventListener('DOMContentLoaded', function () {
     const faqItems = document.querySelectorAll('.faq-item');
 
@@ -9,3 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Back To Top 
+document.addEventListener('DOMContentLoaded', function() {
+  
+    const scrollTopButton = document.querySelector('.scroll-top-button');
+    
+    scrollTopButton.addEventListener('click', function() {
+      
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      
+    });
+    
+  });
