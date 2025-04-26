@@ -1577,16 +1577,21 @@ h5 {
     }
     
     .dashboard-container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
     }
     
     .dashboard-container img {
-        width: 100%;
+        /* width: 100%; */
+        width: 40%;
+        height: 400px;
+        object-fit: cover;
     }
 
     .dashboard-container img:first-child {
         margin-bottom: 0px;
         margin-left: 0px;
+        margin-top: 50px
     }
 
     .dashboard-container img:last-child {
