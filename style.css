@@ -1,24 +1,3 @@
-/* 
- * SlothUI - Main Stylesheet
- * Table of Contents:
- * 1. Base Styles & Reset
- * 2. Typography
- * 3. Buttons
- * 4. Layout & Container
- * 5. Header & Navigation
- * 6. Hero Section
- * 7. Client Logo Section
- * 8. Features Section
- * 9. Stats Section
- * 10. Procrastinators Section
- * 11. Testimonials Section
- * 12. Office Locations Section
- * 13. FAQ Section
- * 14. App Download Section
- * 15. Footer
- * 16. Media Queries
- */
-
 /* ===== 1. Base Styles & Reset ===== */
 * {
     margin: 0;
@@ -679,7 +658,7 @@ section {
 
 .dashboard-container img:last-child {
     margin-top: -75px;
-    margin-left: 90px;
+    margin-left: 66px;
     width:100%;
     z-index: 1;
 }
