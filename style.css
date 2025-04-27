@@ -1,4 +1,25 @@
-/* Base Styles */
+/* 
+ * SlothUI - Main Stylesheet
+ * Table of Contents:
+ * 1. Base Styles & Reset
+ * 2. Typography
+ * 3. Buttons
+ * 4. Layout & Container
+ * 5. Header & Navigation
+ * 6. Hero Section
+ * 7. Client Logo Section
+ * 8. Features Section
+ * 9. Stats Section
+ * 10. Procrastinators Section
+ * 11. Testimonials Section
+ * 12. Office Locations Section
+ * 13. FAQ Section
+ * 14. App Download Section
+ * 15. Footer
+ * 16. Media Queries
+ */
+
+/* ===== 1. Base Styles & Reset ===== */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +30,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     background-color: #ffffff;
+    color: #475569;
 }
 
 img {
@@ -19,66 +41,47 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
 }
 
 ul {
     list-style: none;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-/* Typography */
-h1 {
-    font-size: 60px;
+/* ===== 2. Typography ===== */
+h1, h2, h3, h4, h5 {
     color: #1E293B;
-    text-align: center;
     font-weight: 700;
     line-height: 1.2;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
     margin-bottom: 24px;
     margin-top: 30px;
 }
 
 h2 {
     font-size: 44px;
-    color: #1E293B;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 24px;
     margin-top: 30px;
 }
 
 h3 {
     font-size: 40px;
-    color: #1E293B;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 24px;
     margin-top: 28px;
 }
 
 h4 {
     font-size: 30px;
-    color: #1E293B;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
 h5 {
     font-size: 20px;
-    color: #1E293B;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 15px;
     margin-top: 15px;
 }
@@ -88,7 +91,7 @@ h5 {
     color: #475569;
     text-align: center;
     padding: 0 100px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 
 .feature-text {
@@ -97,7 +100,7 @@ h5 {
     text-align: center;
 }
 
-/* Button Styles */
+/* ===== 3. Buttons ===== */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -117,7 +120,6 @@ h5 {
 .btn-primary:hover {
     background-color: #ffffff;
     color: #4F46E5;
-    border-color: #4F46E5;
 }
 
 .btn-outline {
@@ -129,6 +131,7 @@ h5 {
 .btn-outline:hover {
     background-color: #4F46E5;
     color: #ffffff;
+    border-color: #4F46E5;
 }
 
 .btn-text {
@@ -141,6 +144,7 @@ h5 {
 .btn-text:hover {
     background-color: #4F46E5;
     color: #ffffff;
+    border-color: #4F46E5;
 }
 
 .btn-full {
@@ -148,7 +152,29 @@ h5 {
     text-align: center;
 }
 
-/* Header & Navigation */
+/* ===== 4. Layout & Container ===== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 80px;
+}
+
+/* ===== 5. Header & Navigation ===== */
 .header {
     position: sticky;
     top: 0;
@@ -167,7 +193,6 @@ h5 {
 .logo img {
     height: 48px;
     width: auto;
-    line-break: ;
 }
 
 .nav-links {
@@ -177,7 +202,6 @@ h5 {
 
 .nav-links a {
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -210,9 +234,8 @@ h5 {
     border-radius: 2px;
 }
 
-/* Hero Section */
+/* ===== 6. Hero Section ===== */
 .hero {
-    padding: 75px 0;
     background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 1) 0%,
@@ -228,17 +251,6 @@ h5 {
     align-items: center;
 }
 
-.hero-content h1 {
-    font-size: 60px;
-    color: #1E293B;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 24px;
-    margin-top: 30px;
-}
-
-
 .hero-subtitle {
     display: flex;
     justify-content: center;
@@ -247,11 +259,10 @@ h5 {
     text-align: center;
     font-size: 14px;
     color: #4F46E5;
-    text-align: center;
     margin: 0 auto;
     background-color: #EEF2FF;
     padding: 10px;
-    border: 28px;
+    border-radius: 28px;
 }
 
 .hero-logo {
@@ -272,7 +283,7 @@ h5 {
     margin: 0 auto;
 }
 
-/* Client Logo Section */
+/* ===== 7. Client Logo Section ===== */
 .clients {
     padding: 50px 0;
 }
@@ -305,11 +316,7 @@ h5 {
     transform: scale(1.05);
 }
 
-/* Features Section */
-.features {
-    padding: 75px 0;
-}
-
+/* ===== 8. Features Section ===== */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -342,23 +349,13 @@ h5 {
     height: 50px;
 }
 
-/* Stats Section */
-.stats {
-    padding: 75px 0;
-}
-
+/* ===== 9. Stats Section ===== */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     text-align: center;
     margin-top: 30px;
-}
-
-.section-header img {
-    display: block;
-    margin: 0 auto 20px auto;
-    max-width: 80px;
 }
 
 .stat-item h3 {
@@ -378,14 +375,9 @@ h5 {
     border-right: 1px solid #CBD5E1;
 }
 
-/* Procrastinators Section */
-.procrastinators {
-    padding: 75px 0;
-}
-
+/* ===== 10. Procrastinators Section ===== */
 .procrastinator-showcase {
     display: flex;
-    align-items: flex-start;
     align-items: center;
     gap: 48px;
     margin-top: 48px;
@@ -434,11 +426,7 @@ h5 {
     text-align: left;
 }
 
-/* Testimonials Section */
-.testimonials {
-    padding: 75px 0;
-}
-
+/* ===== 11. Testimonials Section ===== */
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -501,11 +489,7 @@ h5 {
     text-align: left;
 }
 
-/* Office Locations Section */
-.offices {
-    padding: 75px 0;
-}
-
+/* ===== 12. Office Locations Section ===== */
 .offices-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -529,7 +513,6 @@ h5 {
 .office-image {
     width: 100%;
     margin: 20px 0 0 20px;
-    overflow: hidden;
 }
 
 .office-title {
@@ -547,11 +530,7 @@ h5 {
     text-align: left;
 }
 
-/* Faq Section */
-.faq {
-    padding: 75px 0;
-}
-
+/* ===== 13. FAQ Section ===== */
 .faq-grid {
     max-width: 900px;
     margin: 0 auto;
@@ -578,12 +557,11 @@ h5 {
     cursor: pointer;
 }
 
-.faq-question img{
+.faq-question img {
     width: 25px;
     height: 20px;
     object-fit: cover;
     padding-right: 5px;
-
 }
 
 .faq-question h3 {
@@ -627,10 +605,9 @@ h5 {
     line-height: 1.6;
 }
 
-/* App Download Section */
+/* ===== 14. App Download Section ===== */
 .app-download {
     width: 100%;
-    padding: 75px 0;
     background: #EEF2FF;
 }
 
@@ -669,11 +646,9 @@ h5 {
     gap: 16px;
 }
 
-/* Dashboard Preview Styles */
 .app-dashboard-preview {
     max-width: 100%;
     border-radius: 16px;
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -705,11 +680,11 @@ h5 {
 .dashboard-container img:last-child {
     margin-top: -75px;
     margin-left: 90px;
-    width: 90%;
+    width:100%;
     z-index: 1;
 }
 
-/* Footer */
+/* ===== 15. Footer ===== */
 .footer {
     background-color: #ffffff;
     padding: 60px 0 32px;
@@ -745,7 +720,6 @@ h5 {
     text-decoration: none;
     font-size: 16px;
     line-height: 22px;
-    transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
@@ -757,6 +731,7 @@ h5 {
     background-color: #CBD5E1;
     margin-bottom: 30px;
 }
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -804,200 +779,7 @@ h5 {
     color: #94A3B8;
 }
 
-
-/* Responsive styles for offices */
-/* Extra large devices (1200px and above) */
-@media (min-width: 1200px) {
-    .offices-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* Large devices (desktops, 992px to 1199px) */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .offices-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .office-image {
-        height: 180px;
-    }
-
-    .footer-links {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px 30px;
-    }
-}
-
-/* Medium devices (tablets, 768px to 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .offices {
-        padding: 60px 0;
-    }
-    
-    .offices-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-    
-    .office-image {
-        height: 160px;
-    }
-
-    .footer {
-        padding: 50px 0 30px;
-    }
-    
-    .footer-links {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-    
-    .footer-column h4 {
-        font-size: 15px;
-        margin-bottom: 16px;
-    }
-    
-    .footer-column a {
-        font-size: 15px;
-    }
-}
-
-/* Small devices (landscape phones, 576px to 767px) */
-@media (min-width: 576px) and (max-width: 767px) {
-    .offices {
-        padding: 50px 0;
-    }
-    
-    .offices-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    .office-image {
-        height: 140px;
-    }
-    
-    .office-title {
-        font-size: 18px;
-        margin: 16px 16px 8px 16px;
-    }
-    
-    .office-text {
-        font-size: 14px;
-        margin: 0 16px 16px 16px;
-    }
-
-    .footer {
-        padding: 40px 0 24px;
-    }
-    
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px 20px;
-    }
-    
-    .footer-column h4 {
-        font-size: 15px;
-        margin-bottom: 14px;
-    }
-    
-    .footer-column a {
-        font-size: 14px;
-    }
-    
-    .footer-column ul li {
-        margin-bottom: 10px;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .copyright {
-        order: 2;
-    }
-    
-    .scroll-top-button {
-        order: 3;
-    }
-}
-
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575px) {
-    .offices {
-        padding: 40px 0;
-    }
-    
-    .offices-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .office-image {
-        height: 180px;
-    }
-    
-    .office-title {
-        font-size: 18px;
-        margin: 16px 16px 8px 16px;
-    }
-    
-    .office-text {
-        font-size: 14px;
-        margin: 0 16px 16px 16px;
-    }
-
-    .footer {
-        padding: 30px 0 20px;
-    }
-    
-    .footer-links {
-        grid-template-columns: 1fr;
-        gap: 0px;
-    }
-    
-    .footer-column h4 {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-    
-    .footer-column a {
-        font-size: 16px;
-    }
-    
-    .footer-column ul li {
-        margin-bottom: 8px;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
-    
-    .copyright {
-        order: 2;
-        font-size: 14px;
-    }
-    
-    .scroll-top-button {
-        order: 3;
-        width: 36px;
-        height: 36px;
-    }
-    
-    .scroll-top-button svg {
-        width: 16px;
-        height: 16px;
-    }
-}
-
-
-/* Responsive Styles */
+/* ===== 16. Media Queries ===== */
 /* Extra large devices (1200px and above) */
 @media (min-width: 1200px) {
     .hero-subtitle {
@@ -1007,6 +789,7 @@ h5 {
     .text {
         padding: 0 100px;
     }
+    
     .app-download .container {
         padding: 0 80px;
     }
@@ -1017,6 +800,10 @@ h5 {
     
     .app-dashboard-preview {
         max-width: 900px;
+    }
+    
+    .offices-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -1041,13 +828,15 @@ h5 {
     .stat-item h3 {
         font-size: 60px;
     }
+    
     .offices-grid {
         grid-template-columns: repeat(4, 1fr);
     }
-
+    
     .office-image {
         height: 25px;
     }
+    
     .app-download-content h2 {
         font-size: 40px;
     }
@@ -1055,16 +844,16 @@ h5 {
     .app-text {
         font-size: 16px;
     }
-
-    .dashboard-container img:first-child {
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-
+    
+    .dashboard-container img:first-child,
     .dashboard-container img:last-child {
-        margin-top: 0px;
-        margin-left: 0px;
+        margin: 0;
         width: 100%;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 30px;
     }
 }
 
@@ -1123,18 +912,20 @@ h5 {
     .procrastinator-traits {
         margin-right: 0;
     }
+    
     .offices {
         padding: 60px 0;
     }
-
+    
     .offices-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
-
+    
     .office-image {
         height: 25px;
     }
+    
     .app-download {
         padding: 60px 0;
     }
@@ -1153,7 +944,6 @@ h5 {
         align-items: center;
         max-width: 600px;
         margin: 0 auto;
-        padding-right: 0;
     }
     
     .app-download-content h2 {
@@ -1169,18 +959,30 @@ h5 {
     .app-dashboard-preview {
         max-width: 700px;
         margin: 0 auto;
-        padding-left: 0;
     }
-
-    .dashboard-container img:first-child {
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-
+    
+    .dashboard-container img:first-child,
     .dashboard-container img:last-child {
-        margin-top: 0px;
-        margin-left: 0px;
+        margin: 0;
         width: 100%;
+    }
+    
+    .footer {
+        padding: 50px 0 30px;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .footer-column h4 {
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+    
+    .footer-column a {
+        font-size: 15px;
     }
 }
 
@@ -1259,62 +1061,55 @@ h5 {
     .procrastinator-traits {
         margin-right: 0;
     }
+    
     .offices {
         padding: 50px 0;
     }
-
+    
     .offices-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-
+    
     .office-image {
         height: 30px;
     }
-
+    
     .office-title {
         font-size: 18px;
         margin: 16px 16px 8px 16px;
     }
-
+    
     .office-text {
         font-size: 14px;
         margin: 0 16px 16px 16px;
     }
+    
     .faq-grid {
         max-width: 100%;
         padding: 0 20px;
     }
-
-    .faq-item {
-        margin-bottom: 16px;
-    }
-
+    
     .faq-question {
         padding: 18px;
-        font-size: 18px;
     }
-
+    
     .faq-question h3 {
         font-size: 18px;
     }
-
-    .faq-toggle {
-        font-size: 20px;
-    }
-
+    
     .faq-answer {
         padding: 0 18px;
     }
-
+    
     .faq-item.active .faq-answer {
         padding: 0 18px 18px;
     }
-
+    
     .faq-answer p {
         font-size: 15px;
     }
-
+    
     .app-download {
         padding: 50px 0;
     }
@@ -1333,7 +1128,6 @@ h5 {
         align-items: center;
         max-width: 100%;
         margin: 0 auto;
-        padding-right: 0;
     }
     
     .app-download-content h2 {
@@ -1349,18 +1143,48 @@ h5 {
     .app-dashboard-preview {
         max-width: 100%;
         margin: 0 auto;
-        padding-left: 0;
     }
-
-    .dashboard-container img:first-child {
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-
+    
+    .dashboard-container img:first-child,
     .dashboard-container img:last-child {
-        margin-top: 0px;
-        margin-left: 0px;
+        margin: 0;
         width: 100%;
+    }
+    
+    .footer {
+        padding: 40px 0 24px;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+    
+    .footer-column h4 {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+    
+    .footer-column a {
+        font-size: 14px;
+    }
+    
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .copyright {
+        order: 2;
+    }
+    
+    .scroll-top-button {
+        order: 3;
     }
 }
 
@@ -1465,70 +1289,75 @@ h5 {
     .trait-content p {
         font-size: 14px;
     }
+    
     .testimonial-text {
         font-size: 16px;
     }
+    
     .testimonial-author h4 {
         font-size: 14px;
     }
+    
     .testimonial-author p {
         font-size: 14px;
     }
+    
     .offices {
         padding: 40px 0;
     }
-
+    
     .offices-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
+    
     .office-image {
         height: 25px;
     }
-
+    
     .office-title {
         font-size: 18px;
         margin: 16px 16px 8px 16px;
     }
-
+    
     .office-text {
         font-size: 14px;
         margin: 0 16px 16px 16px;
     }
+    
     .faq-grid {
         max-width: 100%;
         padding: 0 15px;
     }
-
+    
     .faq-item {
         margin-bottom: 12px;
     }
-
+    
     .faq-question {
         padding: 16px;
-        font-size: 16px;
     }
-
+    
     .faq-question h3 {
         font-size: 16px;
     }
-
+    
     .faq-toggle {
         font-size: 18px;
     }
-
+    
     .faq-answer {
         padding: 0 16px;
     }
-
+    
     .faq-item.active .faq-answer {
         padding: 0 16px 16px;
     }
-
+    
     .faq-answer p {
         font-size: 14px;
     }
+    
     .app-download {
         padding: 40px 0;
     }
@@ -1547,7 +1376,6 @@ h5 {
         align-items: center;
         max-width: 100%;
         margin: 0 auto;
-        padding-right: 0;
     }
     
     .app-download-content h2 {
@@ -1573,30 +1401,64 @@ h5 {
     .app-dashboard-preview {
         max-width: 100%;
         margin: 0 auto;
-        padding-left: 0;
     }
     
     .dashboard-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     
     .dashboard-container img {
-        /* width: 100%; */
-        width: 40%;
-        height: 400px;
-        object-fit: cover;
-    }
-
-    .dashboard-container img:first-child {
-        margin-bottom: 0px;
-        margin-left: 0px;
-        margin-top: 50px
-    }
-
-    .dashboard-container img:last-child {
-        margin-top: 0px;
-        margin-left: 0px;
         width: 100%;
+        height: auto;
+    }
+    
+    .dashboard-container img:first-child,
+    .dashboard-container img:last-child {
+        margin: 0 0 20px 0;
+    }
+    
+    .footer {
+        padding: 30px 0 20px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .footer-column a {
+        font-size: 16px;
+    }
+    
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .copyright {
+        order: 2;
+        font-size: 14px;
+    }
+    
+    .scroll-top-button {
+        order: 3;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .scroll-top-button svg {
+        width: 16px;
+        height: 16px;
     }
 }

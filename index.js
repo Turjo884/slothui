@@ -1,16 +1,14 @@
 //Mobile Menu Toggle Script 
 document.addEventListener('DOMContentLoaded', function() {
-    // Step 1: Get the elements we need
+
     const menuButton = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const navButtons = document.querySelector('.nav-buttons');
     const navbar = document.querySelector('.navbar');
     
-    // Step 2: Create a mobile menu container to hold everything
     const mobileMenu = document.createElement('div');
     mobileMenu.className = 'mobile-menu';
     
-    // Step 3: Add CSS to fix the mobile menu layout
     const style = document.createElement('style');
     style.textContent = `
       /* Mobile menu container */
@@ -93,26 +91,20 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     `;
     document.head.appendChild(style);
-    
-    // Step 4: Set up the mobile menu structure
-    // Clone the navigation links and buttons to put in our mobile menu
+ 
     const navLinksClone = navLinks.cloneNode(true);
     const navButtonsClone = navButtons.cloneNode(true);
     
-    // Add them to our mobile menu container
     mobileMenu.appendChild(navLinksClone);
     mobileMenu.appendChild(navButtonsClone);
     
-    // Add the mobile menu to the page
     navbar.after(mobileMenu);
     
-    // Step 5: Toggle menu when button is clicked
     menuButton.addEventListener('click', function() {
       mobileMenu.classList.toggle('show');
       menuButton.classList.toggle('active');
     });
     
-    // Step 6: Close menu when clicking a link
     mobileMenu.addEventListener('click', function(event) {
       if (event.target.tagName === 'A') {
         mobileMenu.classList.remove('show');
