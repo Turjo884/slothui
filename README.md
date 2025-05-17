@@ -2,7 +2,7 @@
 
 A modern, responsive landing page template designed for Gen Z audiences with a focus on clean UI and interactive components.
 
-![SlothUI Preview](images/Frame.png)
+![SlothUI Preview](images/soluthi.png)
 
 ## 📋 Features
 
